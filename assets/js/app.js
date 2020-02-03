@@ -3,6 +3,7 @@ import ReactDom from 'react-dom';
 import TodoContextProvider from "./Contexts/TodoContext";
 import TodoTable from "./Components/TodoTable";
 import {CssBaseline} from "@material-ui/core";
+import AppSnackbar from "./Components/AppSnackbar";
 
 class App extends React.Component {
     render() {
@@ -10,6 +11,7 @@ class App extends React.Component {
             <TodoContextProvider>
                 <CssBaseline>
                     <TodoTable/>
+                    <AppSnackbar/>
                 </CssBaseline>
             </TodoContextProvider>
         );
